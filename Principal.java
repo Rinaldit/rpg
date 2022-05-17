@@ -8,7 +8,7 @@ public class Principal {
         arqueiro a = new arqueiro();
 
         g.nome = "Valquíria";
-        g.forca = 80;
+        g.forca = 60;
         g.agilidade = 40;
         g.carisma = 0;
         g.destreza = 50;
@@ -16,7 +16,7 @@ public class Principal {
         g.estamina = 90;
         g.resistencia = 80;
         g.sorte = 10;
-        g.vitalidade = 100;
+        g.vitalidade = 70;
         g.mana = 40;
 
         m.nome = "Mathew";
@@ -24,11 +24,11 @@ public class Principal {
         m.agilidade = 55;
         m.carisma = 20;
         m.destreza = 90;
-        m.inteligencia = 85;
+        m.inteligencia = 95;
         m.estamina = 45;
         m.resistencia = 25;
         m.sorte = 80;
-        m.vitalidade = 40;
+        m.vitalidade = 55;
         m.mana = 95;
 
 
@@ -67,6 +67,14 @@ public class Principal {
             m.defender(valorAtaque);
             // round = round +1
             round++;
+            
+            if(m.vitalidade <= 0){
+            System.out.println("guerreiro " + g.nome + " foi o campeão!!!");
+        }else if(g.vitalidade <= 0){
+            System.out.println("mago " + m.nome + " foi o campeão!!!");
+        }else{
+
+            System.out.println("empate!!!");
 
 
         }
